@@ -10,7 +10,7 @@
 }
 
 h1{
-    background-color: #dd7129;
+    background-color: transparent;
     color: 191614;
 }
 
@@ -42,4 +42,96 @@ h3{
     width: 50%;
     float: right;
     text-align: right;
+}
+
+@media screen and (min-width: 1120px) {
+    img{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    img{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    img{
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    img{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    img{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    img{
+        margin-left: 0;
+    }
+}
+
+h1{
+    animation-name: leftToRight;
+    animation-duration: 1s;
+}
+
+@keyframes leftToRight {
+    from {
+      transform: translate(-100px);
+      opacity: 0.2;
+    }
+  
+    70% {
+      transform: translate(100px);
+      opacity: 0.4;
+    }
+  
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+.heading{
+    border-style: solid;
+    padding-bottom: 1vh;
+    text-align: center;
+}
+
+.memes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+@media screen and (min-width: 600px) {
+    .memes img, .memes video{
+        margin-left: 30px;
+        /* padding-right: 30px; */
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .memes img, .memes video{
+        margin-left: 10px;
+        /* padding-right: 30px; */
+        padding-bottom: 30px;
+    }
 }
