@@ -1,7 +1,33 @@
 *{
-    font-family: 'Comic Sans Ms';
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     background-color: #F6F1EE;
     color: #272320;
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        line-height: 35px;
+        font-size: 18px;
+    }
+    body h1{
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    body{
+        line-height: 25px;
+        font-size: 15px;
+        font-weight: 520;
+    }
+    body h1{
+        line-height: 40px;
+    }
+}
+
+p{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .heading{
