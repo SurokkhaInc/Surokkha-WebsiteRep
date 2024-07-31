@@ -1,5 +1,5 @@
 *{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Times New Roman";
     background-color: #F6F1EE;
     color: #272320;
 }
@@ -150,14 +150,39 @@ h1{
     .memes img, .memes video{
         margin-left: 30px;
         /* padding-right: 30px; */
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 599px) {
     .memes img, .memes video{
-        margin-left: 10px;
+        margin-left: 0px;
         /* padding-right: 30px; */
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
+}
+
+a:hover{
+    font-size: larger;
+    transition: 0.2s;
+}
+
+#right a:hover, #left a:hover{
+    background-color: #11169e;
+    color: white;
+    transition: 0.3s;
+}
+
+#right a, #left a{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+img, video{
+    border-style: solid;
+    border-color: #191614;
+    border-radius: 5px;
 }
