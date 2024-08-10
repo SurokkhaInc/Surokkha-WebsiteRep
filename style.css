@@ -74,17 +74,29 @@ h3{
     img{
         margin-left: 40%;
     }
+    .TrailerVideo{
+        width:40vw;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1119px) {
     img{
         margin-left: 30%;
     }
+    .TrailerVideo{
+        width: 60vw;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 690px) {
     img{
         margin-left: 25%;
+    }
+    .TrailerVideo{
+        width: 80vw;
+        margin-top: 20px;
     }
 }
 
@@ -97,6 +109,10 @@ h3{
 @media screen and (max-width: 480px) {
     img{
         margin-left: 15%;
+    }
+    .TrailerVideo{
+        width: 90vw;
+        margin-top: 20px;
     }
 }
 
@@ -185,4 +201,89 @@ img, video{
     border-style: solid;
     border-color: #191614;
     border-radius: 5px;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Logo section{
+    margin-right: 10px;
+    font-size: 50px;
+    font-family: "Times New Roman";
+}
+
+.S{
+    animation-name: Animation;
+    animation-duration: 1s;
+}
+
+.U{
+    animation-name: Animation2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.R{
+    animation-name: Animation3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.O{
+    animation-name: Animation;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+.K{
+    animation-name: Animation2;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.K2{
+    animation-name: Animation3;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+}
+
+.H{
+    animation-name: Animation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+
+.A{
+    animation-name: Animation2;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+}
+
+@keyframes Animation {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes Animation2 {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes Animation3 {
+    from{
+        transform: rotateX(360deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
 }
